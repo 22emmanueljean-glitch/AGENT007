@@ -1,0 +1,20 @@
+dominion-engine/
+├── DOMINION_ENGINE_CONSTITUTION.md
+├── constitution.yaml
+├── agents/
+│   ├── analyst.agent.md
+│   ├── builder.agent.md
+│   ├── creator.agent.md
+│   ├── moderator.agent.md
+│   ├── publisher.agent.md
+│   └── strategist.agent.md
+├── scripts/
+│   ├── graveyard_scan.py
+│   ├── pov_gate.py
+│   ├── originality_check.py
+│   └── humanizer.py
+├── pipelines/
+│   ├── content_loop.md
+│   ├── build_loop.md
+│   └── publish_loop.md
+└── README.md
