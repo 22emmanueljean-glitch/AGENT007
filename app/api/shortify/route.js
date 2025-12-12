@@ -13,7 +13,11 @@ export async function POST(req) {
   const doc = nlp(text);
   const sentences = doc.sentences().out('array');
 
-  const keep = sentences.slice(0, 3).join('. ') + '.';
+  const keep = sentences
+    .slice(0, 3)
+    .map(s => s.replace(/\.+$/, '').trim())
+    .join('. ') + '.';
+
   const caption1 = keep.slice(0, 140) + (keep.length > 140 ? '…' : '');
   const caption2 = keep.slice(0, 240);
 
